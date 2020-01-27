@@ -1,0 +1,11 @@
+{
+	"files.exclude": {
+		"/home/evgen/Documents/Unreal Projects/SpaceArcade/.git": true,
+		"/home/evgen/Documents/Unreal Projects/SpaceArcade/.kdev4": true,
+		"/home/evgen/Documents/Unreal Projects/SpaceArcade/.vscode": true,
+		"/home/evgen/Documents/Unreal Projects/SpaceArcade/Content": true,
+		"/home/evgen/Documents/Unreal Projects/SpaceArcade/DerivedDataCache": true,
+		"/home/evgen/Documents/Unreal Projects/SpaceArcade/Intermediate": true,
+		"/home/evgen/Documents/Unreal Projects/SpaceArcade/Saved": true
+	}
+}

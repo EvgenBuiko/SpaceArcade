@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "SpaceArcade (Debug)",
+			"request": "launch",
+			"preLaunchTask": "SpaceArcade Linux Debug Build",
+			"program": "/home/evgen/Documents/Unreal Projects/SpaceArcade/Binaries/Linux/SpaceArcade-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/evgen/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceArcade (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "SpaceArcade Linux DebugGame Build",
+			"program": "/home/evgen/Documents/Unreal Projects/SpaceArcade/Binaries/Linux/SpaceArcade-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/evgen/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceArcade (Development)",
+			"request": "launch",
+			"preLaunchTask": "SpaceArcade Linux Development Build",
+			"program": "/home/evgen/Documents/Unreal Projects/SpaceArcade/Binaries/Linux/SpaceArcade",
+			"args": [
+			],
+			"cwd": "/home/evgen/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceArcade (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "SpaceArcade Linux Shipping Build",
+			"program": "/home/evgen/Documents/Unreal Projects/SpaceArcade/Binaries/Linux/SpaceArcade-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/evgen/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceArcade (Test)",
+			"request": "launch",
+			"preLaunchTask": "SpaceArcade Linux Test Build",
+			"program": "/home/evgen/Documents/Unreal Projects/SpaceArcade/Binaries/Linux/SpaceArcade-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/evgen/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceArcadeEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "SpaceArcadeEditor Linux Debug Build",
+			"program": "/home/evgen/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject"
+			],
+			"cwd": "/home/evgen/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceArcadeEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "SpaceArcadeEditor Linux DebugGame Build",
+			"program": "/home/evgen/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-DebugGame",
+			"args": [
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject"
+			],
+			"cwd": "/home/evgen/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceArcadeEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "SpaceArcadeEditor Linux Development Build",
+			"program": "/home/evgen/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject"
+			],
+			"cwd": "/home/evgen/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/home/evgen/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/home/evgen/UnrealEngine"
+		}
+	]
+}

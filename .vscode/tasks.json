@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "SpaceArcade Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Mac",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"IOS",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"HTML5",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"Linux",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"Shipping",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcade TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcade TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcade",
+				"TVOS",
+				"Test",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Linux",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Linux",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcadeEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Linux",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Linux",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Linux",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcadeEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Linux",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Linux",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Linux",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcadeEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Linux",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Mac",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Mac",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcadeEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Mac",
+				"Debug",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Mac",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Mac",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcadeEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Mac",
+				"DebugGame",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Mac",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Mac",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceArcadeEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		},
+		{
+			"label": "SpaceArcadeEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"SpaceArcadeEditor",
+				"Mac",
+				"Development",
+				"/home/evgen/Documents/Unreal Projects/SpaceArcade/SpaceArcade.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/evgen/UnrealEngine"
+			}
+		}
+	]
+}
