@@ -23,13 +23,21 @@ public:
 		UStaticMeshComponent* body;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Collision")
 		UBoxComponent* collision;
-	UPROPERTY(EditAnywhere, BlueprintreadOnly, Category = "Camera")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
 		UCameraComponent* camera;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Scope")
+		float MinimumXScope = -130;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Scope")
+		float MaximumXScope = 200;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Scope")
+		float MinimumYScope = -150;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Scope")
+		float MaximumYScope = 150;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
+	virtual void PossessedBy(AController* NewController) override;
 	virtual void OnTouch( ETouchIndex::Type, FVector );
 
 public:	
@@ -39,6 +47,9 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	
-	
+private:
+
+
+	FVector2D TouchLocation;
+	APlayerController* PlayerController;
 };
