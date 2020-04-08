@@ -25,20 +25,19 @@ public:
 		UBoxComponent* collision;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
 		UCameraComponent* camera;
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Scope")
-		float MinimumXScope = -130;
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Scope")
-		float MaximumXScope = 200;
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Scope")
-		float MinimumYScope = -150;
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Scope")
-		float MaximumYScope = 150;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Movement")
+		FVector2D MinimumScope;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Movement")
+		FVector2D MaximumScope;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Movement")
+		float MoveSensivity;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	virtual void PossessedBy(AController* NewController) override;
-	virtual void OnTouch( ETouchIndex::Type, FVector );
+	virtual void OnTouchPress(ETouchIndex::Type touchIndex, FVector touchLocation);
+	virtual void OnTouchMove( ETouchIndex::Type touchIndex, FVector touchLocation);
 
 public:	
 	// Called every frame
@@ -49,7 +48,8 @@ public:
 
 private:
 
-
-	FVector2D TouchLocation;
+	void GiveCoordsInScope();
+	
+	FVector TouchLocation;
 	APlayerController* PlayerController;
 };

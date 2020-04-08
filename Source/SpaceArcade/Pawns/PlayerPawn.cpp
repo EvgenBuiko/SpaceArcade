@@ -31,48 +31,49 @@ void APlayerPawn::PossessedBy(AController* NewController)
 	PlayerController = Cast< APlayerController >( NewController );
 }
 
+void APlayerPawn::OnTouchPress(ETouchIndex::Type touchIndex, FVector touchLocation)
+{
+	TouchLocation = touchLocation;
+}
+
 // Called every frame
 void APlayerPawn::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
-
-	bool max_min_x = GetActorLocation().X >= MinimumXScope && GetActorLocation().X <= MaximumXScope;
-	bool max_min_y = GetActorLocation().Y >= MinimumYScope && GetActorLocation().Y <= MaximumYScope;
-	if (!max_min_x)
-		SetActorLocation(FVector((GetActorLocation().X < MinimumXScope) ? MinimumXScope + 1 : MaximumXScope - 1, GetActorLocation().Y, 0));
-	if (!max_min_y)
-		SetActorLocation(FVector(GetActorLocation().X, (GetActorLocation().Y < MinimumYScope) ? MinimumYScope + 1 : MaximumYScope - 1, 0));
-
-	if( PlayerController )
-	{
-		bool touch;
-		FVector2D curTouchCoords;
-		PlayerController->GetInputTouchState(ETouchIndex::Touch1, curTouchCoords.X, curTouchCoords.Y, touch);
-		if( touch && max_min_x && max_min_y )
-		{
-			UE_LOG( LogTemp, Log, TEXT( "Touching in X:%f Y:%f" ), curTouchCoords.X, curTouchCoords.Y );
-			AddActorWorldOffset( FVector( TouchLocation.Y - curTouchCoords.Y, curTouchCoords.X - TouchLocation.X, 0 ) * 0.5 );
-			TouchLocation = curTouchCoords;
-		}
-	}
-	else
-	{
-		UE_LOG( LogController, Error, TEXT( "!!!NULL PlayerController!!!" ) );
-		return;
-	}
+	
+	
 }
 
 // Called to bind functionality to input
 void APlayerPawn::SetupPlayerInputComponent( UInputComponent* PlayerInputComponent )
 {
 	Super::SetupPlayerInputComponent( PlayerInputComponent );
-
-	InputComponent->BindTouch(IE_Pressed, this, &APlayerPawn::OnTouch);
+	InputComponent->BindTouch(IE_Pressed, this, &APlayerPawn::OnTouchPress);
+	InputComponent->BindTouch(IE_Repeat, this, &APlayerPawn::OnTouchMove);
 }
 
-void APlayerPawn::OnTouch( ETouchIndex::Type TchInd, FVector Coord )
+void APlayerPawn::GiveCoordsInScope()
 {
-	UE_LOG(LogTemp, Log, TEXT("Touch"));
-	TouchLocation = FVector2D(Coord);
+	FVector coordsInScope = GetActorLocation();
+	coordsInScope.X = FMath::Clamp(coordsInScope.X, MinimumScope.X, MaximumScope.X);
+	coordsInScope.Y = FMath::Clamp(coordsInScope.Y, MinimumScope.Y, MaximumScope.Y);
+	SetActorLocation( coordsInScope );
+}
+
+void APlayerPawn::OnTouchMove( ETouchIndex::Type touchIndex, FVector touchLocation )
+{
+	FVector oldLocation = TouchLocation;
+	if (PlayerController)
+	{
+		UE_LOG(LogTemp, Log, TEXT("Touching in X:%f Y:%f"), touchLocation.Y, touchLocation.X );
+		AddActorLocalOffset(FVector(oldLocation.Y - touchLocation.Y, touchLocation.X - oldLocation.X, 0) * MoveSensivity);
+		GiveCoordsInScope();
+	}
+	else
+	{
+		UE_LOG(LogController, Error, TEXT("!!!NULL PlayerController!!!"));
+		return;
+	}
+	TouchLocation = touchLocation;
 }
 
