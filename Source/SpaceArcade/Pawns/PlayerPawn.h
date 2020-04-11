@@ -6,6 +6,7 @@
 #include "GameFramework/Pawn.h"
 #include "Components/BoxComponent.h"
 #include "Camera/CameraComponent.h"
+#include "ActorComponents/ShootComponent.h"
 
 #include "PlayerPawn.generated.h"
 
@@ -20,21 +21,27 @@ public:
 
 	// Fields
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Mesh")
-		UStaticMeshComponent* body;
+		UStaticMeshComponent* Body;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Collision")
-		UBoxComponent* collision;
+		UBoxComponent* Collision;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
-		UCameraComponent* camera;
+		UCameraComponent* Camera;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Movement")
 		FVector2D MinimumScope;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Movement")
 		FVector2D MaximumScope;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Movement")
 		float MoveSensivity;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shooting")
+		UShootComponent* ShootComponent;
+
+	// Functions
+
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	
 	virtual void PossessedBy(AController* NewController) override;
 	virtual void OnTouchPress(ETouchIndex::Type touchIndex, FVector touchLocation);
 	virtual void OnTouchMove( ETouchIndex::Type touchIndex, FVector touchLocation);

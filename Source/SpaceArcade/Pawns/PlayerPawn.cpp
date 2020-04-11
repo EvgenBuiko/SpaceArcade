@@ -11,11 +11,13 @@ APlayerPawn::APlayerPawn()
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	collision	= CreateDefaultSubobject< UBoxComponent			>(	TEXT(	"Collision"	) );
-	body		= CreateDefaultSubobject< UStaticMeshComponent	>(	TEXT(	"Body"		) );
-	camera		= CreateDefaultSubobject< UCameraComponent		>(	TEXT(	"Camera"	) );
-	SetRootComponent( collision );
-	body->SetupAttachment( RootComponent );
+	Collision		= CreateDefaultSubobject< UBoxComponent			>(TEXT( "Collision"			));
+	Body			= CreateDefaultSubobject< UStaticMeshComponent	>(TEXT( "Body"				));
+	Camera			= CreateDefaultSubobject< UCameraComponent		>(TEXT( "Camera"			));
+	ShootComponent	= CreateDefaultSubobject< UShootComponent		>(TEXT( "Shoot Component"	));
+
+	SetRootComponent( Collision );
+	Body->SetupAttachment( RootComponent );
 	
 }
 
@@ -65,7 +67,6 @@ void APlayerPawn::OnTouchMove( ETouchIndex::Type touchIndex, FVector touchLocati
 	FVector oldLocation = TouchLocation;
 	if (PlayerController)
 	{
-		UE_LOG(LogTemp, Log, TEXT("Touching in X:%f Y:%f"), touchLocation.Y, touchLocation.X );
 		AddActorLocalOffset(FVector(oldLocation.Y - touchLocation.Y, touchLocation.X - oldLocation.X, 0) * MoveSensivity);
 		GiveCoordsInScope();
 	}

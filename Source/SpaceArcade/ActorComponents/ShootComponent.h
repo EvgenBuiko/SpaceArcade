@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "Actors/ShootProjectile.h"
+
 #include "ShootComponent.generated.h"
 
 
@@ -22,16 +24,19 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Shooting")
 		void StopShooting();
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Categoty = "Shooting Params")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting Params")
 		float ShootPeriod;
 
-	FTimerHandle ShootingTimer;
-
-	void Shoot();
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting Params")
+		TSubclassOf<AShootProjectile> ProjectileClass;
+	
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+	
+	void Shoot();
+	
+	FTimerHandle ShootingTimer;
 
 public:	
 
